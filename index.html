@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Hands Wellness Center - 专业放松，身心愉悦</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- 自定义CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Magic Hands" height="70">
+                <span class="brand-text">Magic Hands<br>Wellness Center</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav.home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" data-i18n="nav.services">服务项目</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#booking" data-i18n="nav.booking">预约</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">联系方式</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" data-lang="zh">中文</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图部分 -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <!-- 第一个轮播项 -->
+            <div class="carousel-item active">
+                <img src="images/fallback1.jpg" class="d-block w-100" alt="按摩服务展示">
+            </div>
+            
+            <!-- 第二个轮播项 -->
+            <div class="carousel-item">
+                <img src="images/fallback2.jpg" class="d-block w-100" alt="按摩服务展示">
+            </div>
+            
+            <!-- 第三个轮播项 -->
+            <div class="carousel-item">
+                <img src="images/fallback3.jpg" class="d-block w-100" alt="按摩服务展示">
+            </div>
+
+            <!-- 第四个轮播项 -->
+            <div class="carousel-item">
+                <img src="images/fallback4.jpg" class="d-block w-100" alt="按摩服务展示">
+            </div>
+
+            <!-- 第五个轮播项 -->
+            <div class="carousel-item">
+                <img src="images/fallback5.jpg" class="d-block w-100" alt="按摩服务展示">
+            </div>
+        </div>
+
+        <!-- 轮播控制按钮 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        
+        <!-- 轮播指示器 -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+        </div>
+    </div>
+
+    <!-- 服务项目部分 -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-i18n="services.title">Our Services</h2>
+                <p class="text-muted" data-i18n="services.subtitle">为您提供专业的按摩服务</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-hands service-icon"></i>
+                        <h3 data-i18n="services.deep">深层组织按摩</h3>
+                        <p data-i18n="services.deep.desc">深层按摩，缓解肌肉疼痛</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration">60分钟</span>
+                            <span class="price">$100<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-spa service-icon"></i>
+                        <h3 data-i18n="services.general">舒缓按摩</h3>
+                        <p data-i18n="services.general.desc">全身舒缓按摩，放松身心</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration">60分钟</span>
+                            <span class="price">$100<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-shoe-prints service-icon"></i>
+                        <h3 data-i18n="services.reflexology">足部反射</h3>
+                        <p data-i18n="services.reflexology.desc">专业足部反射疗法</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration">60分钟</span>
+                            <span class="price">$100<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-fire service-icon"></i>
+                        <h3 data-i18n="services.massage.moxa">按摩+艾灸</h3>
+                        <p data-i18n="services.massage.moxa.desc">传统艾灸配合按摩，温经通络</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration">60分钟</span>
+                            <span class="price">$75<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-hot-tub service-icon"></i>
+                        <h3 data-i18n="services.massage.mud">按摩+泥灸</h3>
+                        <p data-i18n="services.massage.mud.desc">泥灸疗法配合按摩，排毒养颜</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration.90">90分钟</span>
+                            <span class="price">$170<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-needle service-icon"></i>
+                        <h3 data-i18n="services.acupuncture">针灸</h3>
+                        <p data-i18n="services.acupuncture.desc">传统针灸，调理身体机能</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration.30">30分钟</span>
+                            <span class="price">$60<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-needle service-icon"></i>
+                        <h3 data-i18n="services.acupuncture.long">针灸</h3>
+                        <p data-i18n="services.acupuncture.desc">传统针灸，调理身体机能</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration">60分钟</span>
+                            <span class="price">$100<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <i class="fas fa-smile service-icon"></i>
+                        <h3 data-i18n="services.facial">面部护理</h3>
+                        <p data-i18n="services.facial.desc">专业面部护理，焕发肌肤活力</p>
+                        <div class="service-price">
+                            <span data-i18n="services.duration">60分钟</span>
+                            <span class="price">$128<small data-i18n="services.tax">+税</small></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集/相册部分 -->
+    <section id="gallery" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-i18n="gallery.title">环境展示</h2>
+                <p class="text-muted" data-i18n="gallery.subtitle">优雅舒适的按摩环境</p>
+            </div>
+            <!-- 环境照片轮播 -->
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/gallery1.jpg" class="d-block w-100" alt="按摩室环境">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gallery2.jpg" class="d-block w-100" alt="休息区">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gallery3.jpg" class="d-block w-100" alt="前台">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gallery4.jpg" class="d-block w-100" alt="按摩床">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gallery5.jpg" class="d-block w-100" alt="等候区">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/gallery6.jpg" class="d-block w-100" alt="走廊">
+                    </div>
+                </div>
+                <!-- 轮播控制按钮 -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <!-- 轮播指示器 -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色优势部分 -->
+    <section id="features" class="section-padding bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-certificate feature-icon"></i>
+                        <h4>专业认证</h4>
+                        <p>所有治疗师均持有专业资格认证</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <h4>灵活预约</h4>
+                        <p>提供在线预约，方便快捷</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <i class="fas fa-heart feature-icon"></i>
+                        <h4>优质服务</h4>
+                        <p>以客为尊，提供贴心服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 预约部分 -->
+    <section id="booking" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 data-i18n="booking.title">立即预约</h2>
+                <p class="text-muted" data-i18n="booking.subtitle">选择您喜欢的服务和时间</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-8 mx-auto">
+                    <!-- 预约表单 -->
+                    <div class="booking-form">
+                        <form>
+                            <table class="booking-table">
+                                <tr>
+                                    <td><label data-i18n="booking.name">姓名</label></td>
+                                    <td><input type="text" class="form-control" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label data-i18n="booking.phone">电话</label></td>
+                                    <td><input type="tel" class="form-control" required></td>
+                                </tr>
+                                <tr>
+                                    <td><label data-i18n="booking.email">邮箱</label></td>
+                                    <td><input type="email" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td><label data-i18n="booking.service">服务项目</label></td>
+                                    <td>
+                                        <select class="form-select" required>
+                                            <option value="" selected data-i18n="booking.service">选择服务项目</option>
+                                            <option value="swedish" data-i18n="services.swedish">瑞典式按摩</option>
+                                            <option value="moxa" data-i18n="services.massage.moxa">按摩+艾灸</option>
+                                            <option value="mud" data-i18n="services.massage.mud">按摩+泥灸</option>
+                                            <option value="acupuncture30" data-i18n="services.acupuncture">针灸(30分钟)</option>
+                                            <option value="acupuncture60" data-i18n="services.acupuncture.long">针灸(60分钟)</option>
+                                            <option value="facial" data-i18n="services.facial">面部护理</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label data-i18n="booking.date">日期</label></td>
+                                    <td><input type="date" class="form-control" required min=""></td>
+                                </tr>
+                                <tr>
+                                    <td><label data-i18n="booking.time">时间</label></td>
+                                    <td>
+                                        <div class="time-slots">
+                                            <div class="btn-group-vertical w-100">
+                                                <input type="radio" class="btn-check" name="time-slot" id="time1" value="10:00" required>
+                                                <label class="btn btn-outline-primary" for="time1">10:00 - 11:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time2" value="11:00">
+                                                <label class="btn btn-outline-primary" for="time2">11:00 - 12:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time3" value="12:00">
+                                                <label class="btn btn-outline-primary" for="time3">12:00 - 13:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time4" value="13:00">
+                                                <label class="btn btn-outline-primary" for="time4">13:00 - 14:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time5" value="14:00">
+                                                <label class="btn btn-outline-primary" for="time5">14:00 - 15:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time6" value="15:00">
+                                                <label class="btn btn-outline-primary" for="time6">15:00 - 16:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time7" value="16:00">
+                                                <label class="btn btn-outline-primary" for="time7">16:00 - 17:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time8" value="17:00">
+                                                <label class="btn btn-outline-primary" for="time8">17:00 - 18:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time9" value="18:00">
+                                                <label class="btn btn-outline-primary" for="time9">18:00 - 19:00</label>
+
+                                                <input type="radio" class="btn-check" name="time-slot" id="time10" value="19:00">
+                                                <label class="btn btn-outline-primary" for="time10">19:00 - 20:00</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label data-i18n="booking.note">备注</label></td>
+                                    <td><textarea class="form-control" rows="3"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit" class="btn btn-primary w-100" data-i18n="booking.submit">提交预约</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式部分 -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4" data-i18n="nav.contact">联系方式</h2>
+                    <div class="contact-info-list text-center">
+                        <div class="contact-item">
+                            <a href="tel:4378988488" class="contact-link">电话：(437) 898-8488</a>
+                        </div>
+                        <div class="contact-item">
+                            <a href="mailto:magichands5918@gmail.com" class="contact-link" data-i18n="contact.email">邮箱：magichands5918@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span data-i18n="booking.hours">营业时间：周一至周日 10:00 - 20:00</span>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://maps.app.goo.gl/Ld5EFBxFPGBGxGZz8" target="_blank" class="contact-link">地址：
+                                2770 14th Ave UNIT 203 Markham, ON, L3R0J1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="google-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.2676407770614!2d-79.3318163!3d43.8540722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3f6a5c05d3d%3A0x6c09a14c6f0e1c38!2s2770%2014th%20Ave%20Unit%20203%2C%20Markham%2C%20ON%20L3R%200J1!5e0!3m2!1sen!2sca!4v1710475163015!5m2!1sen!2sca"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer bg-dark text-light">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h5 data-i18n="footer.title">Magic Hands Wellness Center</h5>
+                    <p class="mb-0" data-i18n="footer.subtitle">专业的按摩护理中心</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="wechat-container">
+                        <img src="images/wechat-qr.jpg" alt="微信二维码" class="wechat-qr">
+                        <p class="mt-2 mb-0" data-i18n="footer.wechat">扫码添加微信</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="https://www.facebook.com/profile.php?id=61571057862091" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.xiaohongshu.com/user/profile/673e8492000000001d02cec1" class="social-link" target="_blank">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS 和依赖 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
